@@ -27,7 +27,7 @@ except ImportError:
         "The 'solr' backend requires the installation of 'pysolr'. Please refer to the documentation."
     )
 
-default_text_type=getattr(settings, "HAYSTACK_DEFAULT_TEXT_TYPE", 'text_de')
+default_text_type=getattr(settings, "HAYSTACK_DEFAULT_TEXT_TYPE", 'text_en')
 
 class SolrSearchBackend(BaseSearchBackend):
     # Word reserved by Solr for special use.
